@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* SIDEBAR base style */
+.sidebar {
+  height: 100vh;
+  padding: 20px;
+  color: #fff;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+/* Dark sidebar bg (Ant Design default dark) */
+.sidebar.ant-layout-sider-dark {
+  background-color: #001529 !important;
+  color: #fff;
+}
+
+/* Light sidebar bg */
+.sidebar.ant-layout-sider-light {
+  background-color: #ffffff !important;
+  color: #000;
+  border-right: 1px solid #e5e5e5;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  padding: 10px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background-color: #eaeef3;
+  border-radius: 50%;
+}
+
+/* MENU BAR */
+.menu-bar {
+  height: 88vh;
+  width: 100%; /* Make full width of sider */
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1rem;
+  position: relative;
+}
+
+/* THEME TOGGLE BUTTON */
+.toggle-theme-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-theme-btn button {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* TOGGLE BUTTON MARGIN */
+.toggle {
+  margin-left: 15px;
+}
